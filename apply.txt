@@ -1,8 +1,3 @@
-https://sapient.taleo.net/careersection/iam/accessmanagement/login.jsf;jsessionid=E88D53ADE1FBFCBA1C1FFB77E232B829.JB_160493_160499
-
-https://hp.taleo.net/careersection/iam/accessmanagement/login.jsf?lang=en&redirectionURI=https%3A%2F%2Fhp.taleo.net%2Fcareersection%2Fapplication.jss%3Flang%3Den%26type%3D1%26csNo%3D2%26portal%3D160160077%26reqNo%3D2739472%26postdata%3D%24AH7xZ6jEgKMn5xFImOMGFQ%3D%3D&TARGET=https%3A%2F%2Fhp.taleo.net%2Fcareersection%2Fapplication.jss%3Flang%3Den%26type%3D1%26csNo%3D2%26portal%3D160160077%26reqNo%3D2739472%26postdata%3D%24AH7xZ6jEgKMn5xFImOMGFQ%3D%3D
-
-https://cgi.njoyn.com/CGI/xweb/xWeb.asp?tbtoken=ZVxRRRwXCBp1EXdzNlAnCCE8eGxEcCAtA0hZVioKE2VYKDBuUUtocBB1cAkbVhRSSXEqWA%3D%3D&chk=dFlbQBJe&clid=21001&page=login&referpage=candidateassessment&jobid=J0613-1740
 
 
 
