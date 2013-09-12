@@ -1,0 +1,1 @@
+getdbname.sh on deployment machine for checking db pointing
