@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+<!-- @version $Id: //product/CIM/version/10.0/plugins/Base/filetemplate/jboss-open-ds.xml#1 $$Change: 610294 $-->
+
+  <xa-datasource>
+    <jndi-name>ATGProductionDS</jndi-name>
+    <track-connection-by-tx>true</track-connection-by-tx>
+    <isSameRM-override-value>false</isSameRM-override-value>
+    <min-pool-size>5</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <blocking-timeout-millis>5000</blocking-timeout-millis>
+    <idle-timeout-minutes>15</idle-timeout-minutes>
+    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+    <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+    <xa-datasource-property name="URL">jdbc:oracle:thin:@172.16.201.105:1521:HKATG</xa-datasource-property>
+    <xa-datasource-property name="User">atgcore</xa-datasource-property>
+    <xa-datasource-property name="Password">atgcore</xa-datasource-property>
+    <valid-connection-checker-class-name>
+       org.jboss.resource.adapter.jdbc.vendor.OracleValidConnectionChecker
+    </valid-connection-checker-class-name>
+    <exception-sorter-class-name>
+        org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+    </exception-sorter-class-name>
+  </xa-datasource>
+
+  <xa-datasource>
+    <jndi-name>ATGSwitchingDS_A</jndi-name>
+    <track-connection-by-tx>true</track-connection-by-tx>
+    <isSameRM-override-value>false</isSameRM-override-value>
+    <min-pool-size>5</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <blocking-timeout-millis>5000</blocking-timeout-millis>
+    <idle-timeout-minutes>15</idle-timeout-minutes>
+    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+    <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+    <xa-datasource-property name="URL">jdbc:oracle:thin:@172.16.201.105:1521:HKATG</xa-datasource-property>
+    <xa-datasource-property name="User">cataloga</xa-datasource-property>
+    <xa-datasource-property name="Password">cataloga</xa-datasource-property>
+    <valid-connection-checker-class-name>
+       org.jboss.resource.adapter.jdbc.vendor.OracleValidConnectionChecker
+    </valid-connection-checker-class-name>
+    <exception-sorter-class-name>
+        org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+    </exception-sorter-class-name>
+  </xa-datasource>
+
+  <xa-datasource>
+    <jndi-name>ATGSwitchingDS_B</jndi-name>
+    <track-connection-by-tx>true</track-connection-by-tx>
+    <isSameRM-override-value>false</isSameRM-override-value>
+    <min-pool-size>5</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <blocking-timeout-millis>5000</blocking-timeout-millis>
+    <idle-timeout-minutes>15</idle-timeout-minutes>
+    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+    <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+    <xa-datasource-property name="URL">jdbc:oracle:thin:@172.16.201.105:1521:HKATG</xa-datasource-property>
+    <xa-datasource-property name="User">catalogb</xa-datasource-property>
+    <xa-datasource-property name="Password">catalogb</xa-datasource-property>
+    <valid-connection-checker-class-name>
+       org.jboss.resource.adapter.jdbc.vendor.OracleValidConnectionChecker
+    </valid-connection-checker-class-name>
+    <exception-sorter-class-name>
+        org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+    </exception-sorter-class-name>
+  </xa-datasource>
+
+  <xa-datasource>
+    <jndi-name>ATGPublishingDS</jndi-name>
+    <track-connection-by-tx>true</track-connection-by-tx>
+    <isSameRM-override-value>false</isSameRM-override-value>
+    <min-pool-size>5</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <blocking-timeout-millis>5000</blocking-timeout-millis>
+    <idle-timeout-minutes>15</idle-timeout-minutes>
+    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+    <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+    <xa-datasource-property name="URL">jdbc:oracle:thin:@172.16.201.105:1521:HKATG</xa-datasource-property>
+    <xa-datasource-property name="User">publishing</xa-datasource-property>
+    <xa-datasource-property name="Password">publishing</xa-datasource-property>
+    <valid-connection-checker-class-name>
+       org.jboss.resource.adapter.jdbc.vendor.OracleValidConnectionChecker
+    </valid-connection-checker-class-name>
+    <exception-sorter-class-name>
+        org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+    </exception-sorter-class-name>
+  </xa-datasource>
+
+  <xa-datasource>
+    <jndi-name>ATGAgentDS</jndi-name>
+    <track-connection-by-tx>true</track-connection-by-tx>
+    <isSameRM-override-value>false</isSameRM-override-value>
+    <min-pool-size>5</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <blocking-timeout-millis>5000</blocking-timeout-millis>
+    <idle-timeout-minutes>15</idle-timeout-minutes>
+    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+    <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+    <xa-datasource-property name="URL">jdbc:oracle:thin:@172.16.201.105:1521:HKATG</xa-datasource-property>
+    <xa-datasource-property name="User">agent</xa-datasource-property>
+    <xa-datasource-property name="Password">agent</xa-datasource-property>
+    <valid-connection-checker-class-name>
+       org.jboss.resource.adapter.jdbc.vendor.OracleValidConnectionChecker
+    </valid-connection-checker-class-name>
+    <exception-sorter-class-name>
+        org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+    </exception-sorter-class-name>
+  </xa-datasource>
+<!--
+    <xa-datasource>
+          <jndi-name>OOMSMSSQLDS</jndi-name>
+          <isSameRM-override-value>false</isSameRM-override-value>
+          <min-pool-size>5</min-pool-size>
+          <max-pool-size>100</max-pool-size>
+          <blocking-timeout-millis>5000</blocking-timeout-millis>
+          <idle-timeout-minutes>15</idle-timeout-minutes>
+          <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+          <xa-datasource-class>com.microsoft.sqlserver.jdbc.SQLServerXADataSource</xa-datasource-class>
+          <xa-datasource-property name="URL">jdbc:sqlserver://172.16.201.11:1433;databaseName=HK_UAT_OOMSCORE;</xa-datasource-property>
+          <xa-datasource-property name="User">user</xa-datasource-property>
+          <xa-datasource-property name="Password">password</xa-datasource-property>
+    </xa-datasource>
+-->
+</datasources>
